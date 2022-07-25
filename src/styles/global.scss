@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+$btn-backgorund: #920303;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  margin: 0 auto;
+  min-width: 320px;
+  height: 100vh;
+}
+
+#root {
+  max-width: 1980px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.red {
+  background-color: $btn-backgorund;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.mainBtn {
+  background-color: $btn-backgorund;
+}
