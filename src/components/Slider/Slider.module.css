@@ -1,5 +1,5 @@
 .wrapper {
-  height: 50vh;
+  height: 54vh;
   display: flex;
 }
 
@@ -33,4 +33,72 @@
   display: flex;
   justify-content: space-between;
   width: 100vw;
+}
+
+.mySwiper button {
+  position: relative;
+}
+.mySwiper button :global(.swiper-pagination) {
+  position: absolute;
+  bottom: -90px;
+  left: calc(100% - 202px);
+}
+.mySwiper :global(.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal
+      > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal) {
+  display: flex;
+  position: absolute;
+  bottom: -8%;
+  left: 10%;
+}
+.mySwiper :global(.swiper-wrapper--left) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  gap: 30px;
+  padding-left: 80px;
+  padding-right: 100px;
+}
+.mySwiper :global(.swiper-wrapper--left) h3 {
+  font-size: 56px;
+}
+.mySwiper :global(.swiper-wrapper--left) p {
+  width: 60%;
+}
+.mySwiper :global(.swiper-wrapper--right) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  text-align: left;
+}
+.mySwiper :global(.swiper-wrapper--right) img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mySwiper :global(.text-background) {
+  background-color: #000;
+  color: #fff;
+}
+.mySwiper :global(.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal
+      > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal) {
+  display: flex;
+  position: absolute;
+  bottom: -90px;
+  left: calc(100% - 102px);
+}
+.mySwiper :global(.swiper-pagination-bullet) {
+  background-color: #efefef;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  opacity: 1;
+}
+.mySwiper :global(.swiper-pagination-bullet-active) {
+  background-color: white;
+  outline: 2px solid black;
 }/*# sourceMappingURL=Slider.module.css.map */

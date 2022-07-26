@@ -22,8 +22,7 @@ export const Slider = () => {
           clickable: true,
         }}
         modules={[Pagination]}
-        className='mySwiper'>
-        <div className='swiper-pagination' />
+        className={styles.mySwiper}>
         <SwiperSlide>
           <div className='swiper-wrapper'>
             <div className='swiper-wrapper--left'>
@@ -36,7 +35,10 @@ export const Slider = () => {
                 <strong>z promocji -10%</strong>. Spiesz się, czas trwania
                 promocji do końca lutego.
               </p>
-              <Button position='relative'>Zamów online</Button>
+              <Button position='relative'>
+                Zamów online
+                <div className='swiper-pagination' />
+              </Button>
             </div>
             <div className='swiper-wrapper--right'>
               <img className='swiper-slide' src={steak} />
@@ -56,7 +58,10 @@ export const Slider = () => {
                 <strong>z promocji -10%</strong>. Spiesz się, czas trwania
                 promocji do końca lutego.
               </p>
-              <Button position='relative'>Zamów online</Button>
+              <Button position='relative'>
+                Zamów online
+                <div className='swiper-pagination' />
+              </Button>
             </div>
             <div className='swiper-wrapper--right'>
               <img className='swiper-slide' src={steak} />
@@ -76,7 +81,10 @@ export const Slider = () => {
                 <strong>z promocji -10%</strong>. Spiesz się, czas trwania
                 promocji do końca lutego.
               </p>
-              <Button position='relative'>Zamów online</Button>
+              <Button position='relative'>
+                Zamów online
+                <div className='swiper-pagination' />
+              </Button>
             </div>
             <div className='swiper-wrapper--right'>
               <img className='swiper-slide' src={steak} />

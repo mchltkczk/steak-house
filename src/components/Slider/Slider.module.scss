@@ -1,5 +1,5 @@
 .wrapper {
-  height: 50vh;
+  height: 54vh;
   display: flex;
 }
 
@@ -40,4 +40,76 @@
   display: flex;
   justify-content: space-between;
   width: 100vw;
+}
+
+.mySwiper {
+  button {
+    position: relative;
+    :global(.swiper-pagination) {
+      position: absolute;
+      bottom: -90px;
+      left: calc(100% - 404px / 2);
+    }
+  }
+  :global(.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal
+      > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal) {
+    display: flex;
+    position: absolute;
+    bottom: -8%;
+    left: 10%;
+  }
+  :global(.swiper-wrapper--left) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    gap: 30px;
+    padding-left: 80px;
+    padding-right: 100px;
+    h3 {
+      font-size: 56px;
+    }
+    p {
+      width: 60%;
+    }
+  }
+
+  :global(.swiper-wrapper--right) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    img {
+      object-fit: cover;
+    }
+  }
+  :global(.text-background) {
+    background-color: #000;
+    color: #fff;
+  }
+
+  :global(.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal
+      > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal) {
+    display: flex;
+    position: absolute;
+    bottom: -90px;
+    left: calc(100% - 204px / 2);
+  }
+  :global(.swiper-pagination-bullet) {
+    background-color: #efefef;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    opacity: 1;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background-color: white;
+    outline: 2px solid black;
+  }
 }
