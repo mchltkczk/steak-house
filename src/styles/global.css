@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import "./config";
-
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +10,7 @@ body {
   display: flex;
   margin: 0 auto;
   min-width: 320px;
-  background-color: $content-background;
+  background-color: #e5e5e5;
 }
 
 #root {
@@ -26,13 +24,13 @@ body {
 }
 
 .red {
-  background-color: $btn-backgorund;
+  background-color: #920303;
   color: #fff;
   border-radius: 10px;
 }
 
 .mainBtn {
-  background-color: $btn-backgorund;
+  background-color: #920303;
 }
 
 .swiper-pagination-fraction,
@@ -44,6 +42,7 @@ body {
   bottom: 8%;
   left: 10%;
 }
+
 .swiper-wrapper--left {
   display: flex;
   flex-direction: column;
@@ -54,12 +53,12 @@ body {
   gap: 30px;
   padding-left: 80px;
   padding-right: 100px;
-  h3 {
-    font-size: 56px;
-  }
-  p {
-    width: 60%;
-  }
+}
+.swiper-wrapper--left h3 {
+  font-size: 56px;
+}
+.swiper-wrapper--left p {
+  width: 60%;
 }
 
 .swiper-wrapper--right {
@@ -69,9 +68,11 @@ body {
   align-items: center;
   width: 50%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   text-align: left;
 }
+
 .text-background {
   background-color: #000;
   color: #fff;
@@ -79,4 +80,4 @@ body {
 
 .mySwiper {
   position: relative;
-}
+}/*# sourceMappingURL=global.css.map */

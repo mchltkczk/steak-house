@@ -14,6 +14,7 @@ już od 39 zł '
         header='UberEats'
         text='Zamawiaj w aplikacji 10% taniej.
 Pobierz aplikację UberEats już dziś.'
+        background='right'
       />
     </div>
   );

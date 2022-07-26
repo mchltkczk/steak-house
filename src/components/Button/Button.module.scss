@@ -1,0 +1,11 @@
+@import "../../styles/config";
+
+.btn {
+  background-color: $btn-backgorund;
+  color: $btn-text;
+  border-radius: 10px;
+  width: 204px;
+  height: 49px;
+  font-size: 14px;
+  border: none;
+}

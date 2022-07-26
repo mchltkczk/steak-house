@@ -1,0 +1,36 @@
+.wrapper {
+  height: 50vh;
+  display: flex;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.swiper-container {
+  padding-bottom: 35px;
+}
+
+.swiper-pagination {
+  text-align: left;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}/*# sourceMappingURL=Slider.module.css.map */

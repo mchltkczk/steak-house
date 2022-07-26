@@ -1,9 +1,7 @@
-@import "../../styles/config";
-
 .wrapper {
   display: flex;
   justify-content: center;
   gap: 100px;
   height: 30px;
   margin: 10px 0;
-}
+}/*# sourceMappingURL=Partners.module.css.map */

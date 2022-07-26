@@ -14,16 +14,17 @@
   gap: 20px;
   width: 70%;
   padding-top: 30px;
-  h3 {
-    font-size: 35px;
-    font-weight: 700;
-  }
-  p {
-    font-size: 20px;
-    font-weight: 400;
-    max-width: 70%;
-  }
 }
+.text h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.text p {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 70%;
+}
+
 .left {
   background-image: url("../../../assets/plates.png");
   background-repeat: no-repeat;
@@ -34,4 +35,4 @@
   background-image: url("../../../assets/aplikacja.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
+}/*# sourceMappingURL=Ad.module.css.map */
