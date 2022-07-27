@@ -7,9 +7,10 @@ import steak from "../../assets/Bitmapv.png";
 
 import "swiper/scss";
 import "swiper/scss/pagination";
+import "swiper/scss/autoplay";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import { Button } from "../Button/Button";
 
 export const Slider = () => {
@@ -21,7 +22,11 @@ export const Slider = () => {
           el: ".swiper-pagination",
           clickable: true,
         }}
-        modules={[Pagination]}
+        autoplay={{
+          delay: 9000,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
         className={styles.mySwiper}>
         <SwiperSlide>
           <div className='swiper-wrapper'>

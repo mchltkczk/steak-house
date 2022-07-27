@@ -4,9 +4,9 @@ import styles from "./Header.module.scss";
 
 export const Header = () => {
   return (
-    <navigation className={styles.wrapper}>
+    <nav className={styles.wrapper}>
       <NavMain />
       <NavUser />
-    </navigation>
+    </nav>
   );
 };
