@@ -11,7 +11,9 @@ export const Partners = () => {
   return (
     <div className={styles.wrapper}>
       {partnerLogos.map((logo, i) => (
-        <img key={i} src={logo} />
+        <a href='/' target='_blank' key={i}>
+          <img src={logo} />
+        </a>
       ))}
     </div>
   );

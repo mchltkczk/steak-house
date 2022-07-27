@@ -1,6 +1,13 @@
 import { Ad } from "./Ad/Ad";
 import styles from "./Ads.module.scss";
 import plates from "../../assets/plates.png";
+
+import huawei from "../../assets/huawei.svg";
+import appstore from "../../assets/AppStore.svg";
+import play from "../../assets/play.svg";
+
+const appStores = [huawei, appstore, play];
+
 export const Ads = () => {
   return (
     <div className={styles.wrapper}>
@@ -15,6 +22,7 @@ już od 39 zł '
         text='Zamawiaj w aplikacji 10% taniej.
 Pobierz aplikację UberEats już dziś.'
         background='right'
+        appStores={appStores}
       />
     </div>
   );

@@ -6,12 +6,36 @@ export const NavMain = () => {
     <div className={styles.wrapper}>
       <img src={logo} className={styles.logo} />
       <ul className={styles.menuList}>
-        <li>Steaks</li>
-        <li>Burgers</li>
-        <li>French fries</li>
-        <li>Drinks</li>
-        <li>Gdzie dowozimy?</li>
-        <li>Kontakt</li>
+        <li>
+          <a href='/' target='_blank'>
+            Steaks
+          </a>
+        </li>
+        <li>
+          <a href='/' target='_blank'>
+            Burgers
+          </a>
+        </li>
+        <li>
+          <a href='/' target='_blank'>
+            French fries
+          </a>
+        </li>
+        <li>
+          <a href='/' target='_blank'>
+            Drinks
+          </a>
+        </li>
+        <li>
+          <a href='/' target='_blank'>
+            Gdzie dowozimy?
+          </a>
+        </li>
+        <li>
+          <a href='/' target='_blank'>
+            Kontakt
+          </a>
+        </li>
       </ul>
     </div>
   );
