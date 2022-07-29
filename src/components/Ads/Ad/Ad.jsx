@@ -9,7 +9,8 @@ export const Ad = ({ header, text, background, appStores }) => {
         <p>{text}</p>
         <div>
           {appStores?.map((store, i) => (
-            <a className='stores' key={i} href='/' target='_blank'>
+            //ikony sklepow mobilnych maja nigdzie nie prowadzic
+            <a className='stores' key={i}>
               <img src={store} />
             </a>
           ))}
