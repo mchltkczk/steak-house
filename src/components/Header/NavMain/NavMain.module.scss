@@ -1,8 +1,17 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/config";
+
 .wrapper {
-  display: flex;
-  justify-content: flex-start;
+  @include flex(row, flex-start);
   align-items: center;
   gap: 50px;
+  overflow-x: hidden;
+}
+.burger {
+  display: none;
+  @media (max-width: 1280px) {
+    display: flex;
+  }
 }
 
 .logo {
@@ -10,7 +19,55 @@
 }
 .menuList {
   display: flex;
+  a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  @media (max-width: 1200px) {
+    @include flex(column, center);
+    gap: 0px;
+    position: absolute;
+    height: 100%;
+    top: 9vh;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    color: #fff;
+    font-size: 35px;
+    z-index: 12;
+    li {
+      text-align: center;
+      padding: 10px;
+      &:hover {
+        background-color: $btn-backgorund;
+      }
+    }
+    a {
+      width: 100vw;
+    }
+  }
   gap: 2.5em;
   list-style: none;
   font-size: 14px;
+}
+
+.burger {
+  cursor: pointer;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.closeBurger {
+  color: #fff;
+  z-index: 100;
+  width: 40px;
+  z-index: 300;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+}
+
+.hide {
+  display: none;
 }

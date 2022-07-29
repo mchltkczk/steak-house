@@ -7,3 +7,9 @@
 .icon {
   height: 13px;
 }
+
+.userNavText {
+  @media (max-width: 820px) {
+    display: none;
+  }
+}

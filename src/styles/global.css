@@ -31,4 +31,9 @@ body {
 
 .mainBtn {
   background-color: #920303;
-} /*# sourceMappingURL=global.css.map */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}/*# sourceMappingURL=global.css.map */

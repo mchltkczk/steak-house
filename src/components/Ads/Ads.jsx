@@ -1,6 +1,5 @@
 import { Ad } from "./Ad/Ad";
 import styles from "./Ads.module.scss";
-import plates from "../../assets/plates.png";
 
 import huawei from "../../assets/huawei.svg";
 import appstore from "../../assets/AppStore.svg";
@@ -13,14 +12,23 @@ export const Ads = () => {
     <div className={styles.wrapper}>
       <Ad
         header='Zestaw dla 3 osób'
-        text='Razem smakuje lepiej! Zamów zestawy obiadowy dla 3 osób 
-już od 39 zł '
+        text={[
+          "Razem smakuje lepiej! Zamów zestawy obiadowy dla 3 osób już od ",
+          <span key='left' className={styles.adHighLightBlack}>
+            39 zł
+          </span>,
+        ]}
         background='left'
       />
       <Ad
         header='UberEats'
-        text='Zamawiaj w aplikacji 10% taniej.
-Pobierz aplikację UberEats już dziś.'
+        text={[
+          "Zamawiaj w aplikacji ",
+          <span key='right' className={styles.adHighlightRed}>
+            10% taniej.{" "}
+          </span>,
+          "Pobierz aplikację UberEats już dziś.",
+        ]}
         background='right'
         appStores={appStores}
       />

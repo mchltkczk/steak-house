@@ -12,9 +12,9 @@
 
   &:hover {
     cursor: pointer;
-    background-color: #b10303;
+    background-color: $btn-background--hover;
   }
   &:active {
-    background-color: #c40505;
+    background-color: $btn-background--active;
   }
 }

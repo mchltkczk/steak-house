@@ -6,4 +6,10 @@
 
 .icon {
   height: 13px;
+}
+
+@media (max-width: 820px) {
+  .userNavText {
+    display: none;
+  }
 }/*# sourceMappingURL=Button.module.css.map */

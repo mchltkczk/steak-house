@@ -1,7 +1,8 @@
+@import "../../styles/mixin.scss";
+
 .wrapper {
-  display: flex;
-  height: 8h;
+  @include flex(row, space-around);
+  height: 9vh;
   width: 100%;
-  justify-content: space-around;
   background-color: #fff;
 }

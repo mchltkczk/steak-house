@@ -6,4 +6,12 @@
   height: 49px;
   font-size: 14px;
   border: none;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #b10303;
+}
+.btn:active {
+  background-color: #c40505;
 }/*# sourceMappingURL=Button.module.css.map */

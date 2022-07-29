@@ -1,22 +1,28 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/config";
+
 .wrapper {
   height: 54vh;
   display: flex;
+  @media (max-width: 420px) {
+    height: 85vh;
+    padding: 10px;
+  }
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: $pagination-bullet-backgroundActive;
 
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
+  @include flex(row, center);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
@@ -37,9 +43,7 @@
 }
 
 .swiper-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
+  @include flex(row, space-between);
 }
 
 .mySwiper {
@@ -59,27 +63,38 @@
     left: 10%;
   }
   :global(.swiper-wrapper--left) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column, center);
     align-items: flex-start;
     width: 50%;
+    @media (max-width: 1280px) {
+      width: 100%;
+    }
     height: 100%;
     gap: 30px;
     padding-left: 80px;
     padding-right: 100px;
+    @media (max-width: 420px) {
+      padding-left: 10px;
+    }
     h3 {
       font-size: 56px;
+      @media (max-width: 500px) {
+        font-size: 40px;
+      }
     }
     p {
       width: 60%;
+      @media (max-width: 420px) {
+        width: 75%;
+      }
     }
   }
 
   :global(.swiper-wrapper--right) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column, center);
+    @media (max-width: 1280px) {
+      display: none;
+    }
     align-items: center;
     width: 50%;
     height: 100%;
@@ -101,7 +116,7 @@
     left: calc(100% - 204px / 2);
   }
   :global(.swiper-pagination-bullet) {
-    background-color: #efefef;
+    background-color: $pagination-bullet-background;
     width: 9px;
     height: 9px;
     border-radius: 50%;
@@ -109,7 +124,7 @@
   }
 
   :global(.swiper-pagination-bullet-active) {
-    background-color: white;
+    background-color: #fff;
     outline: 2px solid black;
   }
 }

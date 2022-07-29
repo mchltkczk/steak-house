@@ -1,6 +1,9 @@
 .wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 100px;
-  margin: 10px 0;
+  overflow: hidden;
+  height: 6vh;
 }/*# sourceMappingURL=Partners.module.css.map */

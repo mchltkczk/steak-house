@@ -2,6 +2,12 @@
   height: 54vh;
   display: flex;
 }
+@media (max-width: 420px) {
+  .wrapper {
+    height: 85vh;
+    padding: 10px;
+  }
+}
 
 .swiper-slide {
   text-align: center;
@@ -9,7 +15,11 @@
   background: #fff;
   /* Center slide text vertically */
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   align-items: center;
 }
 
@@ -31,8 +41,8 @@
 
 .swiper-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  width: 100vw;
 }
 
 .mySwiper button {
@@ -61,11 +71,31 @@
   padding-left: 80px;
   padding-right: 100px;
 }
+@media (max-width: 1280px) {
+  .mySwiper :global(.swiper-wrapper--left) {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .mySwiper :global(.swiper-wrapper--left) {
+    padding-left: 10px;
+  }
+}
 .mySwiper :global(.swiper-wrapper--left) h3 {
   font-size: 56px;
 }
+@media (max-width: 500px) {
+  .mySwiper :global(.swiper-wrapper--left) h3 {
+    font-size: 40px;
+  }
+}
 .mySwiper :global(.swiper-wrapper--left) p {
   width: 60%;
+}
+@media (max-width: 420px) {
+  .mySwiper :global(.swiper-wrapper--left) p {
+    width: 75%;
+  }
 }
 .mySwiper :global(.swiper-wrapper--right) {
   display: flex;
@@ -75,6 +105,11 @@
   width: 50%;
   height: 100%;
   text-align: left;
+}
+@media (max-width: 1280px) {
+  .mySwiper :global(.swiper-wrapper--right) {
+    display: none;
+  }
 }
 .mySwiper :global(.swiper-wrapper--right) img {
   -o-object-fit: cover;
@@ -99,6 +134,6 @@
   opacity: 1;
 }
 .mySwiper :global(.swiper-pagination-bullet-active) {
-  background-color: white;
+  background-color: #fff;
   outline: 2px solid black;
 }/*# sourceMappingURL=Slider.module.css.map */
